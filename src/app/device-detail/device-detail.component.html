@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-12">
+        <search-bar></search-bar>
+
+        <div class="row justify-content-center" *ngIf="device">
+            <div class="col col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Related Devices</h4>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" *ngFor="let relatedDevice of device.relatedDevices">
+                            <div class="row">
+                                <div class="col-3">
+                                    <device-icon [type]="relatedDevice.type"></device-icon>
+                                </div>
+                                <div class="col-9">
+                                    <h4>{{relatedDevice.name}}</h4>
+                                    <div>Status: {{relatedDevice.status}}</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>{{device.name}}</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Status: {{device.status}}</p>
+                        <p class="card-text">Temperature: {{device.temperature}}</p>
+                        <p class="card-text">Usage</p>
+                        <img src="../../assets/chart.png" alt="chart" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

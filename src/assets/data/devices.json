@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "Device 1",
+        "type": 0,
+        "status": "Available",
+        "temperature": 10.0,
+        "dataUsage": "123, 234, 343",
+        "relatedDevices": [
+            {
+                "id": 0,
+                "name": "Device 2",
+                "type": 1,
+                "status": "Offline",
+                "dataUsage": "123, 234, 343"
+            },
+            {
+                "id": 0,
+                "name": "Device 3",
+                "type": 2,
+                "status": "Available",
+                "dataUsage": "123, 234, 343"
+            },
+            {
+                "id": 0,
+                "name": "Device 4",
+                "type": 0,
+                "status": "Available",
+                "dataUsage": "123, 234, 343"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Device 2",
+        "type": 1,
+        "status": "Offline",
+        "temperature": 0,
+        "dataUsage": "123, 234, 343",
+        "relatedDevices": [
+            {
+                "id": 0,
+                "name": "Device 3",
+                "type": 2,
+                "status": "Available",
+                "dataUsage": "123, 234, 343"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Device 3",
+        "type": 2,
+        "status": "Available",
+        "temperature": 0,
+        "dataUsage": "123, 234, 343",
+        "relatedDevices": []
+    },
+    {
+        "id": 4,
+        "name": "Device 4",
+        "type": 0,
+        "status": "Available",
+        "temperature": 0,
+        "dataUsage": "123, 234, 343",
+        "relatedDevices": [
+            {
+                "id": 0,
+                "name": "Device 2",
+                "type": 1,
+                "status": "Offline",
+                "dataUsage": "123, 234, 343"
+            },
+            {
+                "id": 0,
+                "name": "Device 3",
+                "type": 2,
+                "status": "Available",
+                "dataUsage": "123, 234, 343"
+            }
+        ]
+    }
+]

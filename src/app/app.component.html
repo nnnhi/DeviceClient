@@ -1,0 +1,8 @@
+<div class="container mt-3">
+  
+  <router-outlet></router-outlet>
+
+  <div *ngIf="loading.isLoading" class="loader">
+    <app-loading></app-loading>
+  </div>
+</div>

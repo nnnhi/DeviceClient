@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-12">
+    <search-bar (onChangeTermEvent)="search($event)"></search-bar>
+
+    <div *ngFor="let device of filteredDevices" class="row mb-1 mb-md-2 p-2 p-md-3 bg-light">
+      <div class="col-2">
+          <device-icon [type]="device.type"></device-icon>
+      </div>
+      <div class="col-8">
+        <h3>{{device.name}}</h3>
+        <div>Status: {{device.status}}</div>
+      </div>
+      <div class="col-2 text-right">
+        <a [routerLink]="['/device-detail', device.id]"> <i class="fa fa-info-circle fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
